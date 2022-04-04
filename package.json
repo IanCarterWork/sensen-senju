@@ -1,0 +1,25 @@
+{
+  "name": "sensen-senju",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "bin": {
+    "sensen": "bin/sensen"
+  },
+  "scripts": {
+    "watch": "tsc -watch"
+  },
+  "author": "IanCarterWork",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "ts-node": "^10.4.0",
+    "typed-dom": "^0.0.248",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "esm": "^3.2.25",
+    "sensen.raw.cli": "^0.0.28"
+  }
+}
