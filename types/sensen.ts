@@ -16,19 +16,101 @@ const cli = new SensenRawCli.Create({
     
     Children: [
 
+
+
         new SensenRawCli.Child({
     
-            iD: 'get:pkg',
+            iD: 'get',
     
-            Title:'Get Package',
+            Title:'Get resources',
     
             Execute: (args: string[])=>{
 
-                GetPackage.Git(args[0]);
+                SensenRawCli.$Console.Notice('npm install', args)
 
-            }
+            },
 
-        })
+            Children: [
+
+
+
+
+                new SensenRawCli.Child({
+    
+                    iD: 'package',
+            
+                    Title:'Get Backend Package',
+            
+                    Execute: (args: string[])=>{
+        
+                        GetPackage.Git(
+                            
+                            args[0],
+        
+                            args[1] || undefined
+                            
+                        );
+        
+                    },
+        
+        
+                }),
+        
+
+
+
+        
+                new SensenRawCli.Child({
+            
+                    iD: 'module',
+            
+                    Title:'Get Frontend Module',
+            
+                    Execute: (args: string[])=>{
+        
+                        SensenRawCli.$Console.Notice('npm install', args)
+        
+                    }
+        
+                }),
+        
+                
+                
+            ]
+
+        }),
+
+
+
+        // new SensenRawCli.Child({
+    
+        //     iD: 'make:back',
+    
+        //     Title:'Sensen Make Backend',
+    
+        //     Execute: (args: string[])=>{
+
+        //         SensenRawCli.$Console.Notice('smake/backend command', args)
+
+        //     }
+
+        // }),
+
+
+
+        // new SensenRawCli.Child({
+    
+        //     iD: 'make:front',
+    
+        //     Title:'Sensen Make Frontend',
+    
+        //     Execute: (args: string[])=>{
+
+        //         SensenRawCli.$Console.Notice('smake/front command', args)
+
+        //     }
+
+        // }),
 
     ]
 

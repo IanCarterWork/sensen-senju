@@ -1,52 +1,66 @@
 import { exec } from "child_process";
-import { basename } from "path";
+import { basename, dirname } from "path";
 import SensenRawCli from "sensen.raw.cli";
 import { PackageUtilities } from "./package.utilities";
 import InstallPackage from "./package.install";
 
 
-export async function GetGitPackage(url : string){
+export async function GetGitPackage(url : string, type? : string){
 
-    const scd = 'packages'
+    type = type || '-chakra';
+
+    const SiD = 'packages'
     
-    const tmp = PackageUtilities.Path.TemporateDir(`${ scd }`);
+    const tmp = PackageUtilities.Path.TemporateDir(`${ SiD }`);
     
     const name = basename(url);
 
 
     SensenRawCli.$Console.Log('Get Package', 'Clean caches...');
     
-    await PackageUtilities.Path.CleanTemporate(`${ tmp }/${ name }`, (dir)=>{
+    await PackageUtilities.Path.CleanTemporate(`${ tmp }/${ name }`, ($clean)=>{
         
         SensenRawCli.$Console.Log('Get Package', 'Init...');
         
-        PackageUtilities.Path.CreateTemporate(scd, ($dir)=>{
+        PackageUtilities.Path.CreateTemporate(SiD, ($dir)=>{
 
-            SensenRawCli.$Console.Notice('Debugger', dir );
-            
+            const $cmd = `cd ${ basename($dir) } && git clone ${ url } ${ name }`;
 
-    //         const $cmd = `cd ${ basename($dir) } && git clone ${ url } ${ name }`;
-
-    //         exec($cmd, ()=>{
+            exec($cmd, ()=>{
                 
-    //             SensenRawCli.$Console.Log('Get Package', `${ name } is downloaded`);
+                SensenRawCli.$Console.Log('Get Package', `${ name } is downloaded`);
     
-    //             if(InstallPackage.Git(`${ $dir }/${ name }`)){
+                if(InstallPackage.Git(`${ $dir }/${ name }`, type, url)){
 
-    //                 SensenRawCli.$Console.Success('Install Package', `${ name } is done`)
+                    setTimeout(()=>{
+
+                        PackageUtilities.Path.CleanTemporate(
+                            
+                            `${ tmp }/${ name }`,
+
+                            ()=>{
+
+                                SensenRawCli.$Console.Success('Install Package', `${ name } is done`)
+                        
+                            }
+
+                        )
+
+                    }, 1962)
                     
-    //             }
+                }
                 
-    //             else{
+                else{
 
-    //                 SensenRawCli.$Console.Error('Install Package', `${ name } failed`)
+                    SensenRawCli.$Console.Error('Install Package', `${ name } failed`)
 
-    //             }
+                }
                 
-    //         })
+            })
     
-    //         SensenRawCli.$Console.Message('Get Package', `Download Resposite < ${ name } >...`);
+            SensenRawCli.$Console.Message('Get Package', `Download Resposite < ${ name } >...`);
     
+
         });
     
     })

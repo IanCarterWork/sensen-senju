@@ -1,4 +1,5 @@
 import del from "del";
+import { readdirSync } from "fs";
 import SensenRawCli from "sensen.raw.cli";
 
 
@@ -18,3 +19,6 @@ export async function removeDirectory(dir : string){
     }
     
 }
+
+
+

@@ -1,34 +1,52 @@
-import { existsSync, mkdir, statSync } from "fs";
-import path from "path";
+import { existsSync, mkdir, readFileSync } from "fs";
+import path, { basename } from "path";
 import { cwd } from "process";
 import SensenRawCli from "sensen.raw.cli";
 export const PackageUtilities = {
+    ReadConfig(src) {
+        return JSON.parse(`${readFileSync(src)}`);
+    },
     Path: {
-        TemporateDir(dirname) {
-            return path.resolve(cwd(), `~sensen.caches.${dirname}`);
+        TemporateDir($dir) {
+            return path.resolve(cwd(), `.caches.${$dir}`);
         },
-        async CleanTemporate(dirname, callback) {
+        async CleanTemporate($dir, callback) {
             const del = require('del');
             try {
-                await del(dirname);
-                SensenRawCli.$Console.Log('Clean', dirname);
+                await del($dir);
+                SensenRawCli.$Console.Lite('Clean', basename($dir));
             }
             catch (err) {
-                SensenRawCli.$Console.Error(`Clean failed`, dirname);
+                SensenRawCli.$Console.Error(`Clean failed`, basename($dir));
             }
-            setTimeout(() => { callback(dirname); }, 1000);
+            setTimeout(() => { callback($dir); }, 1000);
             return this;
         },
-        CreateTemporate(dirname, callback) {
-            const folder = this.TemporateDir(dirname);
-            if (existsSync(folder)) {
-                if (!statSync(folder).isDirectory()) {
-                    mkdir(folder, () => { callback(folder); });
-                    return this;
-                }
+        CreateTemporate($dir, callback) {
+            const folder = this.TemporateDir($dir);
+            if (!existsSync(folder)) {
+                mkdir(folder, () => { callback(folder); });
+                // SensenRawCli.$Console.Lite('CreateTemporate', 'done')
+                return this;
             }
             callback(folder);
             return this;
         }
     }
+};
+export const Project = {
+    Path(filename) {
+        return path.resolve(cwd(), `./${filename || ''}`);
+    },
+    Config() {
+        return JSON.parse(`${readFileSync(this.Path('package.json'))}`);
+    },
+    BackendConfig() {
+        const config = this.Config().sensen;
+        return JSON.parse(`${readFileSync(this.Path(`${config.path.back}/sensen.config.json`))}`);
+    },
+    FrontendConfig() {
+        const config = this.Config().sensen;
+        return JSON.parse(`${readFileSync(this.Path(`${config.path.front}/sensen.config.json`))}`);
+    },
 };
