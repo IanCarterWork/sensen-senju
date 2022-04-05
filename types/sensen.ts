@@ -18,6 +18,9 @@ const cli = new SensenRawCli.Create({
 
 
 
+        /**
+         * Get resource
+         */
         new SensenRawCli.Child({
     
             iD: 'get',
@@ -79,6 +82,31 @@ const cli = new SensenRawCli.Create({
             ]
 
         }),
+
+
+
+
+        /**
+         * Serve Manager
+         */
+        new SensenRawCli.Child({
+    
+            iD: 'serve',
+    
+            Title:'Sensen Serve Frontend/Backend ',
+    
+            Execute: (args: string[])=>{
+
+                SensenRawCli.$Console.Notice('smake/backend command', (args.join(' ')) )
+
+            },
+
+            Children: [
+
+            ]
+
+        }),
+
 
 
 

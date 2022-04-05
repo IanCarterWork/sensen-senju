@@ -109,7 +109,7 @@ export const Project = {
 
     },
 
-    FrontendConfig(){
+    FrontendConfig() : ProjectFrontendConfig{
         
         const config = this.Config().sensen
         
