@@ -1,8 +1,10 @@
 import { exec } from "child_process";
 import { basename, dirname } from "path";
 import SensenRawCli from "sensen.raw.cli";
-import { PackageUtilities } from "./package.utilities";
-import InstallPackage from "./package.install";
+import { PackageUtilities } from "./com.package.utilities";
+import InstallPackage from "./com.package.install";
+
+
 
 
 export async function GetGitPackage(url : string, type? : string){

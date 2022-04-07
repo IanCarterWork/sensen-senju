@@ -2,6 +2,6 @@
 
 require = require('esm')(module /*, options*/);
 
-const XoXo = require('../build/sensen.js');
+const XoXo = require('../build/com.sensen.js');
 
 XoXo.default.Boot(process.argv);

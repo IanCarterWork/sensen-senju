@@ -17,12 +17,17 @@
       "esModuleInterop": true,
       "types": ["node"], 
       "outDir": "build",
-      "rootDir": "types",
+      "rootDir": "app",
   },
 
   "include": [
-    "**/*",
+    "app/**/*",
   ],
+
+  "exclude": [
+    "./bin",
+    "./build",
+  ]
 
 
 }

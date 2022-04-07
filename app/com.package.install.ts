@@ -3,7 +3,8 @@ import { copyFileSync, existsSync, mkdir, mkdirSync, readdirSync, rename, rename
 import path, { basename } from "path";
 import { cwd } from "process";
 import SensenRawCli from "sensen.raw.cli"
-import { PackageUtilities, Project } from "./package.utilities";
+import { PackageUtilities } from "./com.package.utilities";
+import { Project } from "./com.project";
 
 
 
@@ -16,7 +17,7 @@ export function RecordPackage(prop : PackagesInstalledProps){
     
     const $Backend = Project.BackendConfig();
 
-    const file = Project.Path(`${ config.sensen.path.back }/sensen.config.json`);
+    const file = Project.Path(`${ config.path.back }/sensen.config.json`);
 
 
     $Backend.packages = $Backend.packages || {};
@@ -106,7 +107,7 @@ export function InstallGitPackage(
             
             const $Backend = Project.BackendConfig();
 
-            const packageDir = Project.Path(`${ $project.sensen.path.back }/${ $Backend.alias.Package }`);
+            const packageDir = Project.Path(`${ $project.path.back }/${ $Backend.alias.Package }`);
 
             const pkgNS = pkg.name;
 

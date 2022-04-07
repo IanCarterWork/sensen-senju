@@ -1,8 +1,9 @@
-import { exec } from "child_process";
+import { exec, execSync } from "child_process";
 import { existsSync, mkdir, mkdirSync, readFileSync, statSync } from "fs";
 import path, { basename, dirname } from "path";
 import { cwd } from "process";
 import SensenRawCli from "sensen.raw.cli";
+
 
 
 export const PackageUtilities = {
@@ -15,8 +16,6 @@ export const PackageUtilities = {
 
 
     Path:{
-
-
 
         TemporateDir($dir : string) {
 
@@ -56,8 +55,6 @@ export const PackageUtilities = {
 
                 mkdir(folder, ()=>{ callback(folder) });
                 
-                // SensenRawCli.$Console.Lite('CreateTemporate', 'done')
-                
                 return this;
 
             }
@@ -69,60 +66,5 @@ export const PackageUtilities = {
         }
         
     }
-    
-}
-
-
-
-
-
-
-
-
-export const Project = {
-
-    Path(filename? : string){
-
-        return path.resolve(cwd(), `./${ filename || '' }`);
-
-    },
-
-    Config() : ProjectConfig{
-            
-        return JSON.parse(`${ readFileSync(this.Path('package.json')) }`);
-
-    },
-
-    BackendConfig() : ProjectBackendConfig{
-        
-        const config = this.Config().sensen
-
-        return JSON.parse(`${ 
-            
-            readFileSync(
-                
-                this.Path(`${ config.path.back }/sensen.config.json`)
-                
-            ) 
-        
-        }`);
-
-    },
-
-    FrontendConfig() : ProjectFrontendConfig{
-        
-        const config = this.Config().sensen
-        
-        return JSON.parse(`${ 
-            
-            readFileSync(
-                
-                this.Path( `${ config.path.front }/sensen.config.json` )
-                
-            ) 
-        
-        }`);
-
-    },
     
 }

@@ -1,7 +1,7 @@
 
 
 
-declare type AvailablePlatforms = 'browser' | 'android' | 'ios';
+declare type AvailablePlatforms = 'web' | 'android' | 'ios';
 
 
 declare type BuildOptions = {
@@ -9,6 +9,8 @@ declare type BuildOptions = {
     host: string;
 
     port: number;
+
+    protocol: 'http' | 'https'
     
 }
 
@@ -107,22 +109,32 @@ declare type BuildSplashscreen = {
 declare type FrontendPaths = {
 
     app: string;
-
-    components?: string;
-
-    activities?: string;
-
-    theme?: string;
-
-    themePalette?: string;
-
-    themeTone?: string;
-
+    
+        components?: string;
+    
+        activities?: string;
+    
+        theme?: string;
+    
+        themePalette?: string;
+    
+        themeTone?: string;
+    
     pipe?: string;
-
+    
+        pipeComponents?: string,
+    
+        pipeActivities?: string,
+    
+        pipeTheme?: string,
+    
+        pipeThemePalette?: string,
+    
+        pipeThemeTone?: string,
+    
     appearance?: string;
 
-    template?: string;
+    buildTemplateFile?: string;
     
     build?: string;
 
@@ -146,7 +158,28 @@ declare type FrontendPaths = {
 
 
 
+declare type BuildAssets = {
+
+    icon: BuildIconVariantes,
+
+    splashScreen: BuildSplashscreen
+    
+}
+
+
+
+declare type BuildTools = {
+
+    [K : string] : string;
+    
+}
+
 declare type ProjectFrontendConfig = {
+
+    /**
+     * Frontend application title
+     */
+    title: string;
 
     /**
      * Frontend application name 
@@ -186,33 +219,33 @@ declare type ProjectFrontendConfig = {
     /**
      * Build Assets Icon & SplashScreen
      */
-    assets?:{
-
-        icon: BuildIconVariantes,
-
-        splashScreen: BuildSplashscreen
-        
-    },
+    assets?: BuildAssets,
 
 
     /**
      * Fontend Path
      */
-    path?: FrontendPaths,
+    paths?: FrontendPaths,
 
 
-    tools?:{
-
-        [K : string] : string;
-        
-    }
+    tools?: BuildTools
 
     
 }
 
 
 
-declare type SensenProjectConfig = {
+declare type ProjectConfig = {
+
+    name?: string;
+
+    version?: string;
+
+    main?: string;
+
+    author?: string;
+
+    license?: string;
 
     path: {
 
@@ -225,20 +258,48 @@ declare type SensenProjectConfig = {
 }
 
 
-declare type ProjectConfig = {
+// declare type ProjectConfig = {
 
-    [K: string] : any;
+//     [K: string] : any;
 
-    name?: string;
+//     name?: string;
 
-    version?: string;
+//     version?: string;
 
-    main?: string;
+//     main?: string;
 
-    author?: string;
+//     author?: string;
 
-    license?: string;
+//     license?: string;
 
-    sensen : SensenProjectConfig
+//     sensen : SensenProjectConfig
+    
+// }
+
+
+
+declare type ConfigCombos = {
+
+    project: ProjectConfig;
+
+    front?: ProjectFrontendConfig;
+
+    back?: ProjectFrontendConfig;
+    
+}
+
+
+
+
+
+declare type TTerminalTools = {
+
+    output:{
+        
+        port:number
+
+    },
+
+
     
 }

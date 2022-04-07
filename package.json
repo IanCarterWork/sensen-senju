@@ -7,19 +7,27 @@
     "sensen": "bin/sensen"
   },
   "scripts": {
-    "watch": "tsc -watch"
+    "watch": "tsc -watch",
+    "run:terminal": "node bin/com.terminal.server.run.js"
   },
   "author": "IanCarterWork",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^17.0.13",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "esm": "3.2.25",
+    "fs-extra": "^10.0.0",
+    "glob-fs": "^0.1.7",
     "ts-node": "^10.4.0",
     "typed-dom": "^0.0.248",
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "chokidar": "^3.5.3",
     "del": "^6.0.0",
-    "esm": "^3.2.25",
-    "sensen.raw.cli": "^0.0.28"
+    "express": "^4.17.3",
+    "glob-fs": "^0.1.7",
+    "sensen.raw.cli": "^0.0.28",
+    "socket.io": "^4.4.1"
   }
 }

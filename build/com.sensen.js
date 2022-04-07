@@ -1,5 +1,6 @@
 import SensenRawCli from "sensen.raw.cli";
-import GetPackage from "./package.get";
+import GetPackage from "./com.package.get";
+import { ServreFront } from "./com.serve.front";
 const cli = new SensenRawCli.Create({
     iD: 'sensen',
     Title: '',
@@ -38,9 +39,13 @@ const cli = new SensenRawCli.Create({
             iD: 'serve',
             Title: 'Sensen Serve Frontend/Backend ',
             Execute: (args) => {
-                SensenRawCli.$Console.Notice('smake/backend command', (args.join(' ')));
+                // SensenRawCli.$Console.Notice('smake/backend command', (args.join(' ')) )
+                (async () => {
+                    await ServreFront();
+                })();
             },
-            Children: []
+            // Children: [
+            // ]
         }),
         // new SensenRawCli.Child({
         //     iD: 'make:back',

@@ -1,11 +1,12 @@
 import { existsSync, mkdirSync, readdirSync, renameSync, statSync, writeFile } from "fs";
 import { basename } from "path";
 import SensenRawCli from "sensen.raw.cli";
-import { PackageUtilities, Project } from "./package.utilities";
+import { PackageUtilities } from "./com.package.utilities";
+import { Project } from "./com.project";
 export function RecordPackage(prop) {
     const config = Project.Config();
     const $Backend = Project.BackendConfig();
-    const file = Project.Path(`${config.sensen.path.back}/sensen.config.json`);
+    const file = Project.Path(`${config.path.back}/sensen.config.json`);
     $Backend.packages = $Backend.packages || {};
     $Backend.packages[prop.id] = prop;
     SensenRawCli.$Console.Lite('Configuration', `Updating...`);
@@ -33,7 +34,7 @@ export function InstallGitPackage(src, type, respository) {
             const pkg = PackageUtilities.ReadConfig(`${src}/sensen.package.json`);
             const $project = Project.Config();
             const $Backend = Project.BackendConfig();
-            const packageDir = Project.Path(`${$project.sensen.path.back}/${$Backend.alias.Package}`);
+            const packageDir = Project.Path(`${$project.path.back}/${$Backend.alias.Package}`);
             const pkgNS = pkg.name;
             mkdirSync(`${packageDir}/${pkgNS}`, { recursive: true });
             files.forEach((f) => {
