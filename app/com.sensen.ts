@@ -40,6 +40,9 @@ const cli = new SensenRawCli.Create({
 
 
 
+                /**
+                 * Get Package from Git
+                 */
                 new SensenRawCli.Child({
     
                     iD: 'package',
@@ -62,23 +65,6 @@ const cli = new SensenRawCli.Create({
                 }),
         
 
-
-
-        
-                new SensenRawCli.Child({
-            
-                    iD: 'module',
-            
-                    Title:'Get Frontend Module',
-            
-                    Execute: (args: string[])=>{
-        
-                        SensenRawCli.$Console.Notice('npm install', args)
-        
-                    }
-        
-                }),
-        
                 
                 
             ]
@@ -95,13 +81,18 @@ const cli = new SensenRawCli.Create({
     
             iD: 'serve',
     
-            Title:'Sensen Serve Frontend/Backend [, -front] or [, -back]',
+            Title:'Sensen Serve Frontend/Backend [, -front] or [, -back] or [, all',
     
             Execute: (args: string[])=>{
 
-                // SensenRawCli.$Console.Notice('smake/backend command', (args.join(' ')) )
 
-                switch(args[0]){
+
+                /**
+                 * Switch Case
+                 */
+                switch((args[0]||'').toLowerCase()){
+
+
 
 
                     /**
@@ -117,6 +108,8 @@ const cli = new SensenRawCli.Create({
                         })()
                     
                     break;
+
+
 
 
                     /**
@@ -137,6 +130,28 @@ const cli = new SensenRawCli.Create({
 
 
 
+                    /**
+                     * Serve backend
+                     */
+
+                     case '-all':
+
+                        (async ()=>{
+        
+                            await ServeBack();
+                                    
+                            await ServeFront();
+        
+                        })()
+                    
+                    break;
+
+
+
+
+                    /**
+                     * All Server
+                     */
                     default:
 
                         var inquirer = require('inquirer');
@@ -173,7 +188,7 @@ const cli = new SensenRawCli.Create({
                                 
                             }) => {
     
-                                SensenRawCli.$Console.Warning('Démarrage', '...')
+                                SensenRawCli.$Console.Warning('Starting', '...')
 
                                 if(answers.serve == 'All'){
 
