@@ -11,7 +11,7 @@ import { execSync } from "child_process";
 
 
 
-export async function ServreFront(){
+export async function ServeFront(){
     
     /**
      * Load Configurations

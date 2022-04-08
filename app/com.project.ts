@@ -111,7 +111,53 @@ export const Project = {
 
         return this.FrontendCommand;
         
-    }
+    },
+    
+
+
+
+
+
+
+
+
+    BackendCommand(label : string | null, cmd : string, config : ConfigCombos){
+
+        if(!config.project){ throw (`Project config not supported`); }
+
+        if(!config.back){ throw (`Backend config not supported`); }
+    
+        // if(!config.back.paths){ throw (`Backend Paths config not supported`); }
+    
+
+        const back = Project.Path(config.project.path.back)
+
+        const x = exec( `cd ${ back } && ${ cmd }` );
+
+
+        // x.on('spawn', ()=>{ SensenRawCli.$Console.Message(`Backend • ${label || ''}`, 'Spawn') })
+    
+        
+        if(x.stdout){
+    
+            x.stdout.addListener('data', (chunk)=>{
+    
+                SensenRawCli.$Console.Notice(`Backend • ${label || ''}`, chunk)
+        
+            })
+    
+            x.stdout.addListener('error', (chunk)=>{
+    
+                SensenRawCli.$Console.Error(`Backend • ${label || ''}`, chunk)
+        
+            })
+    
+        }    
+
+
+        return x;
+        
+    },
     
     
 }

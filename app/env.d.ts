@@ -59,17 +59,35 @@ declare type ProjectBackendConfig = {
 
     versionNumber?: number;
 
+    development: BuildOptions,
+
+    production: BuildOptions,
+
+    paths: {
+
+        public : string;
+
+        services : string;
+
+        packages : string;
+
+        components : string;
+
+        settings : string;
+        
+    };
+
     alias: {
 
         [P : string] : string
         
-    }
+    };
 
     packages: {
 
         [P : string] : PackagesInstalledProps
         
-    }
+    };
     
 }
 
@@ -284,7 +302,7 @@ declare type ConfigCombos = {
 
     front?: ProjectFrontendConfig;
 
-    back?: ProjectFrontendConfig;
+    back?: ProjectBackendConfig;
     
 }
 

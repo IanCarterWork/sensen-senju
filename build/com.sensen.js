@@ -1,6 +1,7 @@
 import SensenRawCli from "sensen.raw.cli";
 import GetPackage from "./com.package.get";
-import { ServreFront } from "./com.serve.front";
+import { ServeBack } from "./com.serve.back";
+import { ServeFront } from "./com.serve.front";
 const cli = new SensenRawCli.Create({
     iD: 'sensen',
     Title: '',
@@ -37,12 +38,64 @@ const cli = new SensenRawCli.Create({
          */
         new SensenRawCli.Child({
             iD: 'serve',
-            Title: 'Sensen Serve Frontend/Backend ',
+            Title: 'Sensen Serve Frontend/Backend [, -front] or [, -back]',
             Execute: (args) => {
                 // SensenRawCli.$Console.Notice('smake/backend command', (args.join(' ')) )
-                (async () => {
-                    await ServreFront();
-                })();
+                switch (args[0]) {
+                    /**
+                     * Serve Frontend
+                     */
+                    case '-front':
+                        (async () => {
+                            await ServeFront();
+                        })();
+                        break;
+                    /**
+                     * Serve backend
+                     */
+                    case '-back':
+                        (async () => {
+                            await ServeBack();
+                        })();
+                        break;
+                    default:
+                        var inquirer = require('inquirer');
+                        inquirer
+                            .prompt([
+                            {
+                                name: 'serve',
+                                message: 'Did you say start a development server ?',
+                                type: 'list',
+                                choices: [
+                                    'All',
+                                    'Frontend',
+                                    'Backend',
+                                ]
+                            },
+                        ])
+                            .then(async (answers) => {
+                            SensenRawCli.$Console.Warning('Démarrage', '...');
+                            if (answers.serve == 'All') {
+                                await ServeBack();
+                                await ServeFront();
+                            }
+                            else if (answers.serve == 'Backend') {
+                                await ServeBack();
+                            }
+                            else if (answers.serve == 'Frontend') {
+                                await ServeFront();
+                            }
+                        })
+                            .catch((error) => {
+                            if (error.isTtyError) {
+                                SensenRawCli.$Console.Error('Error', error.isTtyError);
+                            }
+                            else {
+                                SensenRawCli.$Console.Warning('Warning', error);
+                            }
+                        });
+                        break;
+                }
             },
             // Children: [
             // ]

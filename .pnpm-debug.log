@@ -1,0 +1,3703 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "sensen-senju",
+      "version": "0.0.43",
+      "description": "",
+      "main": "build/index.js",
+      "bin": {
+        "sensen": "bin/sensen"
+      },
+      "scripts": {
+        "watch": "tsc -watch",
+        "run:terminal": "node bin/com.terminal.server.run.js"
+      },
+      "author": "IanCarterWork",
+      "license": "ISC",
+      "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.23",
+        "ts-node": "^10.4.0",
+        "typed-dom": "^0.0.248",
+        "typescript": "^4.5.5"
+      },
+      "dependencies": {
+        "fs-extra": "^10.0.0",
+        "glob-fs": "^0.1.7",
+        "chokidar": "^3.5.3",
+        "esm": "^3.2.25",
+        "del": "^6.0.0",
+        "express": "^4.17.3",
+        "sensen.raw.cli": "^0.0.28",
+        "socket.io": "^4.4.1"
+      }
+    },
+    "prefix": "/Volumes/WorkStation/dev/git/npx/sensen-senju"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/IanCarterWorks/.pnpm-store/v3",
+    "virtualStoreDir": "/Volumes/WorkStation/dev/git/npx/sensen-senju/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-fs/0.1.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "glob-fs",
+      "rawSpec": "^0.1.7"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs/0.1.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sensen.raw.cli/0.0.28",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sensen.raw.cli",
+      "rawSpec": "^0.0.28"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sensen.raw.cli/0.0.28",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs/0.1.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sensen.raw.cli/0.0.28",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/socket.io/4.4.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "socket.io",
+      "rawSpec": "^4.4.1"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io/4.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io/4.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esm/3.2.25",
+    "wanted": {
+      "dependentId": ".",
+      "name": "esm",
+      "rawSpec": "^3.2.25"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esm/3.2.25",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ts-node/10.7.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "ts-node",
+      "rawSpec": "^10.4.0"
+    }
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-node/10.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esm/3.2.25",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ts-node/10.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fs-extra/10.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "fs-extra",
+      "rawSpec": "^10.0.0"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/10.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs-extra/10.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/express/4.17.13",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/express",
+      "rawSpec": "^4.17.13"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/express/4.17.13",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/express/4.17.13",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chokidar/3.5.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "chokidar",
+      "rawSpec": "^3.5.3"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chokidar/3.5.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/node",
+      "rawSpec": "^17.0.23"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/17.0.23",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/17.0.23",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/typescript/4.6.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "^4.5.5"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/4.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/4.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/del/6.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "del",
+      "rawSpec": "^6.0.0"
+    }
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/del/6.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/del/6.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/express/4.17.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "express",
+      "rawSpec": "^4.17.3"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/express/4.17.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/express/4.17.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/typed-dom/0.0.248",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typed-dom",
+      "rawSpec": "^0.0.248"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typed-dom/0.0.248",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typed-dom/0.0.248",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/async/1.5.2",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "async",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/async/1.5.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/async/1.5.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lazy-cache/0.1.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "lazy-cache",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lazy-cache/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/get-value/1.3.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "get-value",
+      "rawSpec": "^1.1.5"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-value/1.3.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "50 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kind-of/2.0.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "kind-of",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kind-of/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "52 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/extend-shallow/2.0.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "extend-shallow",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/extend-shallow/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "54 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/export-files/2.1.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "export-files",
+      "rawSpec": "^2.0.1"
+    }
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/export-files/2.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "56 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-fs-dotfiles/0.1.6",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "glob-fs-dotfiles",
+      "rawSpec": "^0.1.6"
+    }
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs-dotfiles/0.1.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "58 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graceful-fs/4.2.10",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "graceful-fs",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graceful-fs/4.2.10",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "60 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-dotfile/1.0.3",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "is-dotfile",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-dotfile/1.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "62 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-dotdir/0.1.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "is-dotdir",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-dotdir/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "64 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ends-with/0.2.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "ends-with",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ends-with/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "66 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/sensen.raw.cli/0.0.28",
+      "name": "@types/node",
+      "rawSpec": "^17.0.9"
+    }
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ts-node/10.7.0",
+    "wanted": {
+      "dependentId": "/sensen.raw.cli/0.0.28",
+      "name": "ts-node",
+      "rawSpec": "^10.4.0"
+    }
+  },
+  "68 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bluebird/2.11.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "bluebird",
+      "rawSpec": "^2.9.33"
+    }
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bluebird/2.11.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lazy-cache/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kind-of/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/get-value/1.3.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs-dotfiles/0.1.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/extend-shallow/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/export-files/2.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-dotfile/1.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-dotdir/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graceful-fs/4.2.10",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ends-with/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bluebird/2.11.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "81 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-visit/0.1.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "object-visit",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-visit/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-visit/0.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "84 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-fs-gitignore/0.1.6",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "glob-fs-gitignore",
+      "rawSpec": "^0.1.5"
+    }
+  },
+  "85 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs-gitignore/0.1.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "86 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-fs-gitignore/0.1.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "87 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/set-value/0.2.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "set-value",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "88 debug pnpm:deprecation": {
+    "deprecated": "Critical bug fixed in v3.0.1, please upgrade to the latest version.",
+    "depth": 1,
+    "pkgId": "registry.npmjs.org/set-value/0.2.0",
+    "pkgName": "set-value",
+    "pkgVersion": "0.2.0",
+    "prefix": "/Volumes/WorkStation/dev/git/npx/sensen-senju"
+  },
+  "89 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/set-value/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "90 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parse-filepath/0.6.3",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "parse-filepath",
+      "rawSpec": "^0.6.1"
+    }
+  },
+  "91 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-filepath/0.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "92 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/relative/3.0.2",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "relative",
+      "rawSpec": "^3.0.1"
+    }
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/relative/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "94 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/starts-with/1.0.2",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "starts-with",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/starts-with/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "96 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@cspotcode/source-map-support/0.7.0",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "@cspotcode/source-map-support",
+      "rawSpec": "0.7.0"
+    }
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@cspotcode/source-map-support/0.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/set-value/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "99 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parse-filepath/0.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "100 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/relative/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/starts-with/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@cspotcode/source-map-support/0.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "103 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/through2/2.0.5",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "through2",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through2/2.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/through2/2.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "106 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/accepts/1.3.8",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "accepts",
+      "rawSpec": "~1.3.4"
+    }
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/accepts/1.3.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "108 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.omit/1.1.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "object.omit",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.omit/1.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "110 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/accepts/1.3.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "111 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.omit/1.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "112 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/base64id/2.0.0",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "base64id",
+      "rawSpec": "~2.0.0"
+    }
+  },
+  "113 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/base64id/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "114 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/base64id/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "115 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "debug",
+      "rawSpec": "~4.3.2"
+    }
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/component-emitter/1.3.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "component-emitter",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/component-emitter/1.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/4.3.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/component-emitter/1.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "121 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/engine.io/6.1.3",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "engine.io",
+      "rawSpec": "~6.1.0"
+    }
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/engine.io/6.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "123 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/socket.io-adapter/2.3.3",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "socket.io-adapter",
+      "rawSpec": "~2.3.3"
+    }
+  },
+  "124 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io-adapter/2.3.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "125 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mixin-object/2.0.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "mixin-object",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mixin-object/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/2.0.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "is-glob",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "129 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/yn/3.1.1",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "yn",
+      "rawSpec": "3.1.1"
+    }
+  },
+  "130 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yn/3.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "131 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graceful-fs/4.2.10",
+    "wanted": {
+      "dependentId": "/fs-extra/10.0.1",
+      "name": "graceful-fs",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "132 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mixin-object/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "133 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/2.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "134 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io-adapter/2.3.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/engine.io/6.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "136 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/yn/3.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "137 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/socket.io-parser/4.0.4",
+    "wanted": {
+      "dependentId": "/socket.io/4.4.1",
+      "name": "socket.io-parser",
+      "rawSpec": "~4.0.4"
+    }
+  },
+  "138 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io-parser/4.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "139 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@tsconfig/node10/1.0.8",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "@tsconfig/node10",
+      "rawSpec": "^1.0.7"
+    }
+  },
+  "140 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node10/1.0.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "141 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@tsconfig/node14/1.0.1",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "@tsconfig/node14",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "142 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node14/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "143 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@tsconfig/node12/1.0.9",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "@tsconfig/node12",
+      "rawSpec": "^1.0.7"
+    }
+  },
+  "144 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node12/1.0.9",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node10/1.0.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "146 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node14/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "147 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node12/1.0.9",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/socket.io-parser/4.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "149 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/acorn/8.7.0",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "acorn",
+      "rawSpec": "^8.4.1"
+    }
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn/8.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "151 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@tsconfig/node16/1.0.2",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "@tsconfig/node16",
+      "rawSpec": "^1.0.2"
+    }
+  },
+  "152 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node16/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "153 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@tsconfig/node16/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "154 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn/8.7.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "155 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/acorn-walk/8.2.0",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "acorn-walk",
+      "rawSpec": "^8.1.1"
+    }
+  },
+  "156 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn-walk/8.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "157 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/acorn-walk/8.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "158 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/arg/4.1.3",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "arg",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "159 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/arg/4.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "160 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/arg/4.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "161 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/create-require/1.1.1",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "create-require",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "162 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/create-require/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "163 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/create-require/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "164 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/make-error/1.3.6",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "make-error",
+      "rawSpec": "^1.1.1"
+    }
+  },
+  "165 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/make-error/1.3.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "166 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/v8-compile-cache-lib/3.0.0",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "v8-compile-cache-lib",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "167 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/v8-compile-cache-lib/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "168 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.3",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "is-glob",
+      "rawSpec": "~4.0.1"
+    }
+  },
+  "169 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "170 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/make-error/1.3.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "171 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-glob/4.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "172 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/v8-compile-cache-lib/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "173 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/diff/4.0.2",
+    "wanted": {
+      "dependentId": "/ts-node/10.7.0",
+      "name": "diff",
+      "rawSpec": "^4.0.1"
+    }
+  },
+  "174 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/diff/4.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "175 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/diff/4.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "176 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jsonfile/6.1.0",
+    "wanted": {
+      "dependentId": "/fs-extra/10.0.1",
+      "name": "jsonfile",
+      "rawSpec": "^6.0.1"
+    }
+  },
+  "177 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jsonfile/6.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "178 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/universalify/2.0.0",
+    "wanted": {
+      "dependentId": "/fs-extra/10.0.1",
+      "name": "universalify",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "179 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/universalify/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "180 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graceful-fs/4.2.10",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "graceful-fs",
+      "rawSpec": "^4.2.4"
+    }
+  },
+  "181 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.3",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "is-glob",
+      "rawSpec": "^4.0.1"
+    }
+  },
+  "182 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jsonfile/6.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "183 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/universalify/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "184 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fsevents/2.3.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "fsevents",
+      "rawSpec": "~2.3.2"
+    }
+  },
+  "185 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "186 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/anymatch/3.1.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "anymatch",
+      "rawSpec": "~3.1.2"
+    }
+  },
+  "187 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/anymatch/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "188 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/qs/6.9.7",
+    "wanted": {
+      "dependentId": "/@types/express/4.17.13",
+      "name": "@types/qs",
+      "rawSpec": "*"
+    }
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/qs/6.9.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "190 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fsevents/2.3.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "191 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/anymatch/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "192 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/qs/6.9.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "193 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/body-parser/1.19.2",
+    "wanted": {
+      "dependentId": "/@types/express/4.17.13",
+      "name": "@types/body-parser",
+      "rawSpec": "*"
+    }
+  },
+  "194 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/body-parser/1.19.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "195 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/serve-static/1.13.10",
+    "wanted": {
+      "dependentId": "/@types/express/4.17.13",
+      "name": "@types/serve-static",
+      "rawSpec": "*"
+    }
+  },
+  "196 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/serve-static/1.13.10",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "197 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/accepts/1.3.8",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "accepts",
+      "rawSpec": "~1.3.8"
+    }
+  },
+  "198 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/body-parser/1.19.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "199 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/array-flatten/1.1.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "array-flatten",
+      "rawSpec": "1.1.1"
+    }
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/array-flatten/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "201 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/serve-static/1.13.10",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "202 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/body-parser/1.19.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "body-parser",
+      "rawSpec": "1.19.2"
+    }
+  },
+  "203 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/body-parser/1.19.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "204 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/array-flatten/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "205 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/content-disposition/0.5.4",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "content-disposition",
+      "rawSpec": "0.5.4"
+    }
+  },
+  "206 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/content-disposition/0.5.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "207 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/body-parser/1.19.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "208 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/content-disposition/0.5.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "209 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/braces/3.0.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "braces",
+      "rawSpec": "~3.0.2"
+    }
+  },
+  "210 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "211 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "normalize-path",
+      "rawSpec": "~3.0.0"
+    }
+  },
+  "212 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "213 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cookie-signature/1.0.6",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "cookie-signature",
+      "rawSpec": "1.0.6"
+    }
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie-signature/1.0.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "215 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/2.6.9",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "debug",
+      "rawSpec": "2.6.9"
+    }
+  },
+  "216 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/2.6.9",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "217 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cookie/0.4.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "cookie",
+      "rawSpec": "0.4.2"
+    }
+  },
+  "218 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "219 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-binary-path/2.1.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "is-binary-path",
+      "rawSpec": "~2.1.0"
+    }
+  },
+  "220 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-binary-path/2.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "221 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/braces/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "222 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/normalize-path/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "223 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie-signature/1.0.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "224 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cookie/0.4.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "225 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-binary-path/2.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "226 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/debug/2.6.9",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "227 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/readdirp/3.6.0",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "readdirp",
+      "rawSpec": "~3.6.0"
+    }
+  },
+  "228 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readdirp/3.6.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "229 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/readdirp/3.6.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "230 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-path-cwd/2.2.0",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "is-path-cwd",
+      "rawSpec": "^2.2.0"
+    }
+  },
+  "231 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-path-cwd/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "232 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-path-cwd/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "233 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/globby/11.1.0",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "globby",
+      "rawSpec": "^11.0.1"
+    }
+  },
+  "234 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globby/11.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "235 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fresh/0.5.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "fresh",
+      "rawSpec": "0.5.2"
+    }
+  },
+  "236 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fresh/0.5.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "237 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge-descriptors/1.0.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "merge-descriptors",
+      "rawSpec": "1.0.1"
+    }
+  },
+  "238 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-descriptors/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "239 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/globby/11.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "240 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fresh/0.5.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "241 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge-descriptors/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "242 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/express-serve-static-core/4.17.28",
+    "wanted": {
+      "dependentId": "/@types/express/4.17.13",
+      "name": "@types/express-serve-static-core",
+      "rawSpec": "^4.17.18"
+    }
+  },
+  "243 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/express-serve-static-core/4.17.28",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "244 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/express-serve-static-core/4.17.28",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "245 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/content-type/1.0.4",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "content-type",
+      "rawSpec": "~1.0.4"
+    }
+  },
+  "246 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/content-type/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "247 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-path-inside/3.0.3",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "is-path-inside",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "248 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-path-inside/3.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "249 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slash/3.0.0",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "slash",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "250 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "251 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rimraf/3.0.2",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "rimraf",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "252 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rimraf/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "253 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-to-regexp/0.1.7",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "path-to-regexp",
+      "rawSpec": "0.1.7"
+    }
+  },
+  "254 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-to-regexp/0.1.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "255 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/p-map/4.0.0",
+    "wanted": {
+      "dependentId": "/del/6.0.0",
+      "name": "p-map",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "256 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "257 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/qs/6.9.7",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "qs",
+      "rawSpec": "6.9.7"
+    }
+  },
+  "258 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/qs/6.9.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "259 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-path-inside/3.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "260 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/content-type/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "261 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/safe-buffer/5.2.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "safe-buffer",
+      "rawSpec": "5.2.1"
+    }
+  },
+  "262 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safe-buffer/5.2.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "263 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/encodeurl/1.0.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "encodeurl",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "264 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/encodeurl/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "265 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "266 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/depd/1.1.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "depd",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "267 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/depd/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "268 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-html/1.0.3",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "escape-html",
+      "rawSpec": "~1.0.3"
+    }
+  },
+  "269 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-html/1.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "270 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rimraf/3.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "271 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/send/0.17.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "send",
+      "rawSpec": "0.17.2"
+    }
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/send/0.17.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "273 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/serve-static/1.14.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "serve-static",
+      "rawSpec": "1.14.2"
+    }
+  },
+  "274 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/serve-static/1.14.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "275 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/setprototypeof/1.2.0",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "setprototypeof",
+      "rawSpec": "1.2.0"
+    }
+  },
+  "276 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/setprototypeof/1.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "277 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/p-map/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "278 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-to-regexp/0.1.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "279 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/utils-merge/1.0.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "utils-merge",
+      "rawSpec": "1.0.1"
+    }
+  },
+  "280 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/utils-merge/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "281 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/qs/6.9.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "282 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/encodeurl/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "283 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/depd/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "284 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safe-buffer/5.2.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "285 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/negotiator/0.6.3",
+    "wanted": {
+      "dependentId": "/accepts/1.3.8",
+      "name": "negotiator",
+      "rawSpec": "0.6.3"
+    }
+  },
+  "286 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/negotiator/0.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "287 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-html/1.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "288 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/send/0.17.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "289 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/serve-static/1.14.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "290 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/utils-merge/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "291 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/setprototypeof/1.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "292 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.2",
+    "wanted": {
+      "dependentId": "/debug/4.3.4",
+      "name": "ms",
+      "rawSpec": "2.1.2"
+    }
+  },
+  "293 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "294 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/negotiator/0.6.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "295 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "296 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/etag/1.8.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "etag",
+      "rawSpec": "~1.8.1"
+    }
+  },
+  "297 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/etag/1.8.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "298 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/etag/1.8.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "299 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/finalhandler/1.1.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "finalhandler",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "300 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/finalhandler/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "301 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "@types/node",
+      "rawSpec": ">=10.0.0"
+    }
+  },
+  "302 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/accepts/1.3.8",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "accepts",
+      "rawSpec": "~1.3.4"
+    }
+  },
+  "303 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/base64id/2.0.0",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "base64id",
+      "rawSpec": "2.0.0"
+    }
+  },
+  "304 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/methods/1.1.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "methods",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "305 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/methods/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "306 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/finalhandler/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "307 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/methods/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "308 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/on-finished/2.3.0",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "on-finished",
+      "rawSpec": "~2.3.0"
+    }
+  },
+  "309 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/on-finished/2.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "310 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "debug",
+      "rawSpec": "~4.3.1"
+    }
+  },
+  "311 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/on-finished/2.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "312 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parseurl/1.3.3",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "parseurl",
+      "rawSpec": "~1.3.3"
+    }
+  },
+  "313 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parseurl/1.3.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "314 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/range-parser/1.2.1",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "range-parser",
+      "rawSpec": "~1.2.1"
+    }
+  },
+  "315 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/range-parser/1.2.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "316 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/proxy-addr/2.0.7",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "proxy-addr",
+      "rawSpec": "~2.0.7"
+    }
+  },
+  "317 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/proxy-addr/2.0.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "318 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/component-emitter/1.3.0",
+    "wanted": {
+      "dependentId": "/socket.io-parser/4.0.4",
+      "name": "component-emitter",
+      "rawSpec": "~1.3.0"
+    }
+  },
+  "319 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/4.3.4",
+    "wanted": {
+      "dependentId": "/socket.io-parser/4.0.4",
+      "name": "debug",
+      "rawSpec": "~4.3.1"
+    }
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/range-parser/1.2.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "321 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@cspotcode/source-map-consumer/0.8.0",
+    "wanted": {
+      "dependentId": "/@cspotcode/source-map-support/0.7.0",
+      "name": "@cspotcode/source-map-consumer",
+      "rawSpec": "0.8.0"
+    }
+  },
+  "322 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@cspotcode/source-map-consumer/0.8.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "323 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graceful-fs/4.2.10",
+    "wanted": {
+      "dependentId": "/jsonfile/6.1.0",
+      "name": "graceful-fs",
+      "rawSpec": "^4.1.6"
+    }
+  },
+  "324 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/universalify/2.0.0",
+    "wanted": {
+      "dependentId": "/jsonfile/6.1.0",
+      "name": "universalify",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "325 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parseurl/1.3.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "326 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/proxy-addr/2.0.7",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "327 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@cspotcode/source-map-consumer/0.8.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "328 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-is/1.6.18",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "type-is",
+      "rawSpec": "~1.6.18"
+    }
+  },
+  "329 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-is/1.6.18",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "330 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/@types/body-parser/1.19.2",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "331 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vary/1.1.2",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "vary",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "332 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vary/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "333 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/@types/serve-static/1.13.10",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "334 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/@types/express-serve-static-core/4.17.28",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "335 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/qs/6.9.7",
+    "wanted": {
+      "dependentId": "/@types/express-serve-static-core/4.17.28",
+      "name": "@types/qs",
+      "rawSpec": "*"
+    }
+  },
+  "336 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mime-types/2.1.35",
+    "wanted": {
+      "dependentId": "/accepts/1.3.8",
+      "name": "mime-types",
+      "rawSpec": "~2.1.34"
+    }
+  },
+  "337 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime-types/2.1.35",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "338 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/statuses/1.5.0",
+    "wanted": {
+      "dependentId": "/express/4.17.3",
+      "name": "statuses",
+      "rawSpec": "~1.5.0"
+    }
+  },
+  "339 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/statuses/1.5.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "340 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/cookie/0.4.1",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "@types/cookie",
+      "rawSpec": "^0.4.1"
+    }
+  },
+  "341 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "342 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-parent/1.3.0",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "glob-parent",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "343 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/1.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "344 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-parent/5.1.2",
+    "wanted": {
+      "dependentId": "/chokidar/3.5.3",
+      "name": "glob-parent",
+      "rawSpec": "~5.1.2"
+    }
+  },
+  "345 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "346 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/cors/2.8.12",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "@types/cors",
+      "rawSpec": "^2.8.12"
+    }
+  },
+  "347 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cors/2.8.12",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "348 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slash/3.0.0",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "slash",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "349 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cors/2.8.5",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "cors",
+      "rawSpec": "~2.8.5"
+    }
+  },
+  "350 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cors/2.8.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "351 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/type-is/1.6.18",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "352 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime-types/2.1.35",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "353 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vary/1.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "354 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/statuses/1.5.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "355 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "356 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/1.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "357 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob-parent/5.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "358 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cors/2.8.12",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "359 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cors/2.8.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "360 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cookie/0.4.2",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "cookie",
+      "rawSpec": "~0.4.1"
+    }
+  },
+  "361 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bytes/3.1.2",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "bytes",
+      "rawSpec": "3.1.2"
+    }
+  },
+  "362 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bytes/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "363 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/content-type/1.0.4",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "content-type",
+      "rawSpec": "~1.0.4"
+    }
+  },
+  "364 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/2.6.9",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "debug",
+      "rawSpec": "2.6.9"
+    }
+  },
+  "365 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/depd/1.1.2",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "depd",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "366 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/http-errors/1.8.1",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "http-errors",
+      "rawSpec": "1.8.1"
+    }
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/http-errors/1.8.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "368 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/iconv-lite/0.4.24",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "iconv-lite",
+      "rawSpec": "0.4.24"
+    }
+  },
+  "369 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/iconv-lite/0.4.24",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "370 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/on-finished/2.3.0",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "on-finished",
+      "rawSpec": "~2.3.0"
+    }
+  },
+  "371 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/bytes/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "372 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/qs/6.9.7",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "qs",
+      "rawSpec": "6.9.7"
+    }
+  },
+  "373 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/http-errors/1.8.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "374 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/raw-body/2.4.3",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "raw-body",
+      "rawSpec": "2.4.3"
+    }
+  },
+  "375 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/raw-body/2.4.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "376 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/type-is/1.6.18",
+    "wanted": {
+      "dependentId": "/body-parser/1.19.2",
+      "name": "type-is",
+      "rawSpec": "~1.6.18"
+    }
+  },
+  "377 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/iconv-lite/0.4.24",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "378 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/safe-buffer/5.2.1",
+    "wanted": {
+      "dependentId": "/content-disposition/0.5.4",
+      "name": "safe-buffer",
+      "rawSpec": "5.2.1"
+    }
+  },
+  "379 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.0.0",
+    "wanted": {
+      "dependentId": "/debug/2.6.9",
+      "name": "ms",
+      "rawSpec": "2.0.0"
+    }
+  },
+  "380 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "381 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/2.6.9",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "debug",
+      "rawSpec": "2.6.9"
+    }
+  },
+  "382 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/depd/1.1.2",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "depd",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "383 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/raw-body/2.4.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "384 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "385 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/component-emitter/1.2.11",
+    "wanted": {
+      "dependentId": "/socket.io-parser/4.0.4",
+      "name": "@types/component-emitter",
+      "rawSpec": "^1.2.10"
+    }
+  },
+  "386 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/component-emitter/1.2.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "387 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/encodeurl/1.0.2",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "encodeurl",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "388 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-html/1.0.3",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "escape-html",
+      "rawSpec": "~1.0.3"
+    }
+  },
+  "389 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/etag/1.8.1",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "etag",
+      "rawSpec": "~1.8.1"
+    }
+  },
+  "390 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fresh/0.5.2",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "fresh",
+      "rawSpec": "0.5.2"
+    }
+  },
+  "391 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/http-errors/1.8.1",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "http-errors",
+      "rawSpec": "1.8.1"
+    }
+  },
+  "392 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/component-emitter/1.2.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "393 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mime/1.6.0",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "mime",
+      "rawSpec": "1.6.0"
+    }
+  },
+  "394 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime/1.6.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "395 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ms/2.1.3",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "ms",
+      "rawSpec": "2.1.3"
+    }
+  },
+  "396 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "397 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/on-finished/2.3.0",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "on-finished",
+      "rawSpec": "~2.3.0"
+    }
+  },
+  "398 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/range-parser/1.2.1",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "range-parser",
+      "rawSpec": "~1.2.1"
+    }
+  },
+  "399 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/statuses/1.5.0",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "statuses",
+      "rawSpec": "~1.5.0"
+    }
+  },
+  "400 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/encodeurl/1.0.2",
+    "wanted": {
+      "dependentId": "/serve-static/1.14.2",
+      "name": "encodeurl",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "401 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-html/1.0.3",
+    "wanted": {
+      "dependentId": "/serve-static/1.14.2",
+      "name": "escape-html",
+      "rawSpec": "~1.0.3"
+    }
+  },
+  "402 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parseurl/1.3.3",
+    "wanted": {
+      "dependentId": "/serve-static/1.14.2",
+      "name": "parseurl",
+      "rawSpec": "~1.3.3"
+    }
+  },
+  "403 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/send/0.17.2",
+    "wanted": {
+      "dependentId": "/serve-static/1.14.2",
+      "name": "send",
+      "rawSpec": "0.17.2"
+    }
+  },
+  "404 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/debug/2.6.9",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "debug",
+      "rawSpec": "2.6.9"
+    }
+  },
+  "405 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/encodeurl/1.0.2",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "encodeurl",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "406 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-html/1.0.3",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "escape-html",
+      "rawSpec": "~1.0.3"
+    }
+  },
+  "407 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/on-finished/2.3.0",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "on-finished",
+      "rawSpec": "~2.3.0"
+    }
+  },
+  "408 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parseurl/1.3.3",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "parseurl",
+      "rawSpec": "~1.3.3"
+    }
+  },
+  "409 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/statuses/1.5.0",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "statuses",
+      "rawSpec": "~1.5.0"
+    }
+  },
+  "410 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime/1.6.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "411 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ms/2.1.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "412 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/engine.io-parser/5.0.3",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "engine.io-parser",
+      "rawSpec": "~5.0.3"
+    }
+  },
+  "413 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/engine.io-parser/5.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "414 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/connect/3.4.35",
+    "wanted": {
+      "dependentId": "/@types/body-parser/1.19.2",
+      "name": "@types/connect",
+      "rawSpec": "*"
+    }
+  },
+  "415 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/connect/3.4.35",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "416 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ws/8.2.3",
+    "wanted": {
+      "dependentId": "/engine.io/6.1.3",
+      "name": "ws",
+      "rawSpec": "~8.2.3"
+    }
+  },
+  "417 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ws/8.2.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "418 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ee-first/1.1.1",
+    "wanted": {
+      "dependentId": "/on-finished/2.3.0",
+      "name": "ee-first",
+      "rawSpec": "1.1.1"
+    }
+  },
+  "419 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ee-first/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "420 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ipaddr.js/1.9.1",
+    "wanted": {
+      "dependentId": "/proxy-addr/2.0.7",
+      "name": "ipaddr.js",
+      "rawSpec": "1.9.1"
+    }
+  },
+  "421 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ipaddr.js/1.9.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "422 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mime-types/2.1.35",
+    "wanted": {
+      "dependentId": "/type-is/1.6.18",
+      "name": "mime-types",
+      "rawSpec": "~2.1.24"
+    }
+  },
+  "423 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/forwarded/0.2.0",
+    "wanted": {
+      "dependentId": "/proxy-addr/2.0.7",
+      "name": "forwarded",
+      "rawSpec": "0.2.0"
+    }
+  },
+  "424 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/forwarded/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "425 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/normalize-path/3.0.0",
+    "wanted": {
+      "dependentId": "/anymatch/3.1.2",
+      "name": "normalize-path",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "426 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/mime/1.3.2",
+    "wanted": {
+      "dependentId": "/@types/serve-static/1.13.10",
+      "name": "@types/mime",
+      "rawSpec": "^1"
+    }
+  },
+  "427 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/mime/1.3.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "428 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/media-typer/0.3.0",
+    "wanted": {
+      "dependentId": "/type-is/1.6.18",
+      "name": "media-typer",
+      "rawSpec": "0.3.0"
+    }
+  },
+  "429 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/media-typer/0.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "430 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/engine.io-parser/5.0.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "431 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ws/8.2.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/connect/3.4.35",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "433 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ee-first/1.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "434 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/forwarded/0.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "435 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ipaddr.js/1.9.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "436 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/mime/1.3.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "437 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/media-typer/0.3.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "438 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aggregate-error/3.1.0",
+    "wanted": {
+      "dependentId": "/p-map/4.0.0",
+      "name": "aggregate-error",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "439 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aggregate-error/3.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "440 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/array-union/2.1.0",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "array-union",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "441 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/array-union/2.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "442 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-glob/4.0.3",
+    "wanted": {
+      "dependentId": "/glob-parent/5.1.2",
+      "name": "is-glob",
+      "rawSpec": "^4.0.1"
+    }
+  },
+  "443 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mime-db/1.52.0",
+    "wanted": {
+      "dependentId": "/mime-types/2.1.35",
+      "name": "mime-db",
+      "rawSpec": "1.52.0"
+    }
+  },
+  "444 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime-db/1.52.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "445 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/depd/1.1.2",
+    "wanted": {
+      "dependentId": "/http-errors/1.8.1",
+      "name": "depd",
+      "rawSpec": "~1.1.2"
+    }
+  },
+  "446 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/http-errors/1.8.1",
+      "name": "inherits",
+      "rawSpec": "2.0.4"
+    }
+  },
+  "447 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "448 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aggregate-error/3.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "449 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/array-union/2.1.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "450 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/setprototypeof/1.2.0",
+    "wanted": {
+      "dependentId": "/http-errors/1.8.1",
+      "name": "setprototypeof",
+      "rawSpec": "1.2.0"
+    }
+  },
+  "451 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/statuses/1.5.0",
+    "wanted": {
+      "dependentId": "/http-errors/1.8.1",
+      "name": "statuses",
+      "rawSpec": ">= 1.5.0 < 2"
+    }
+  },
+  "452 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mime-db/1.52.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "453 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/toidentifier/1.0.1",
+    "wanted": {
+      "dependentId": "/http-errors/1.8.1",
+      "name": "toidentifier",
+      "rawSpec": "1.0.1"
+    }
+  },
+  "454 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/toidentifier/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "455 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inherits/2.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "456 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/toidentifier/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "457 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge2/1.4.1",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "merge2",
+      "rawSpec": "^1.4.1"
+    }
+  },
+  "458 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge2/1.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "459 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dir-glob/3.0.1",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "dir-glob",
+      "rawSpec": "^3.0.1"
+    }
+  },
+  "460 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dir-glob/3.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "461 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fast-glob/3.2.11",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "fast-glob",
+      "rawSpec": "^3.2.9"
+    }
+  },
+  "462 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-glob/3.2.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "463 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/bytes/3.1.2",
+    "wanted": {
+      "dependentId": "/raw-body/2.4.3",
+      "name": "bytes",
+      "rawSpec": "3.1.2"
+    }
+  },
+  "464 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/http-errors/1.8.1",
+    "wanted": {
+      "dependentId": "/raw-body/2.4.3",
+      "name": "http-errors",
+      "rawSpec": "1.8.1"
+    }
+  },
+  "465 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/17.0.23",
+    "wanted": {
+      "dependentId": "/@types/connect/3.4.35",
+      "name": "@types/node",
+      "rawSpec": "*"
+    }
+  },
+  "466 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/iconv-lite/0.4.24",
+    "wanted": {
+      "dependentId": "/raw-body/2.4.3",
+      "name": "iconv-lite",
+      "rawSpec": "0.4.24"
+    }
+  },
+  "467 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vary/1.1.2",
+    "wanted": {
+      "dependentId": "/cors/2.8.5",
+      "name": "vary",
+      "rawSpec": "^1"
+    }
+  },
+  "468 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob/7.2.0",
+    "wanted": {
+      "dependentId": "/rimraf/3.0.2",
+      "name": "glob",
+      "rawSpec": "^7.1.3"
+    }
+  },
+  "469 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob/7.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "470 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-windows/0.1.1",
+    "wanted": {
+      "dependentId": "/glob-fs/0.1.7",
+      "name": "is-windows",
+      "rawSpec": "^0.1.0"
+    }
+  },
+  "471 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-windows/0.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "472 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ignore/5.2.0",
+    "wanted": {
+      "dependentId": "/globby/11.1.0",
+      "name": "ignore",
+      "rawSpec": "^5.2.0"
+    }
+  },
+  "473 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ignore/5.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "474 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/range-parser/1.2.4",
+    "wanted": {
+      "dependentId": "/@types/express-serve-static-core/4.17.28",
+      "name": "@types/range-parser",
+      "rawSpec": "*"
+    }
+  },
+  "475 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/range-parser/1.2.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "476 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/destroy/1.0.4",
+    "wanted": {
+      "dependentId": "/send/0.17.2",
+      "name": "destroy",
+      "rawSpec": "~1.0.4"
+    }
+  },
+  "477 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/destroy/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "478 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/unpipe/1.0.0",
+    "wanted": {
+      "dependentId": "/finalhandler/1.1.2",
+      "name": "unpipe",
+      "rawSpec": "~1.0.0"
+    }
+  },
+  "479 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unpipe/1.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "480 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/unpipe/1.0.0",
+    "wanted": {
+      "dependentId": "/raw-body/2.4.3",
+      "name": "unpipe",
+      "rawSpec": "1.0.0"
+    }
+  },
+  "481 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/merge2/1.4.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "482 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dir-glob/3.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "483 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fast-glob/3.2.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "484 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-windows/0.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "485 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ignore/5.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "486 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/glob/7.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "487 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/range-parser/1.2.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "488 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unpipe/1.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "489 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/destroy/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "490 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-extglob/2.1.1",
+    "wanted": {
+      "dependentId": "/is-glob/4.0.3",
+      "name": "is-extglob",
+      "rawSpec": "^2.1.1"
+    }
+  },
+  "491 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "492 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-extglob/2.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "493 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fill-range/7.0.1",
+    "wanted": {
+      "dependentId": "/braces/3.0.2",
+      "name": "fill-range",
+      "rawSpec": "^7.0.1"
+    }
+  },
+  "494 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fill-range/7.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "495 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fill-range/7.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "496 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/binary-extensions/2.2.0",
+    "wanted": {
+      "dependentId": "/is-binary-path/2.1.0",
+      "name": "binary-extensions",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "497 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/binary-extensions/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "498 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/binary-extensions/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "499 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.1",
+    "wanted": {
+      "dependentId": "/anymatch/3.1.2",
+      "name": "picomatch",
+      "rawSpec": "^2.0.4"
+    }
+  },
+  "500 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "501 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.1",
+    "wanted": {
+      "dependentId": "/readdirp/3.6.0",
+      "name": "picomatch",
+      "rawSpec": "^2.2.1"
+    }
+  },
+  "502 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/glob-parent/5.1.2",
+    "wanted": {
+      "dependentId": "/fast-glob/3.2.11",
+      "name": "glob-parent",
+      "rawSpec": "^5.1.2"
+    }
+  },
+  "503 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/merge2/1.4.1",
+    "wanted": {
+      "dependentId": "/fast-glob/3.2.11",
+      "name": "merge2",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "504 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/picomatch/2.3.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "505 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/indent-string/4.0.0",
+    "wanted": {
+      "dependentId": "/aggregate-error/3.1.0",
+      "name": "indent-string",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "506 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/indent-string/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "507 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object-assign/4.1.1",
+    "wanted": {
+      "dependentId": "/cors/2.8.5",
+      "name": "object-assign",
+      "rawSpec": "^4"
+    }
+  },
+  "508 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "509 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inherits/2.0.4",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "inherits",
+      "rawSpec": "2"
+    }
+  },
+  "510 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/indent-string/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "511 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object-assign/4.1.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "512 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/safer-buffer/2.1.2",
+    "wanted": {
+      "dependentId": "/iconv-lite/0.4.24",
+      "name": "safer-buffer",
+      "rawSpec": ">= 2.1.2 < 3"
+    }
+  },
+  "513 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safer-buffer/2.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "514 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/clean-stack/2.2.0",
+    "wanted": {
+      "dependentId": "/aggregate-error/3.1.0",
+      "name": "clean-stack",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "515 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/clean-stack/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "516 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/safer-buffer/2.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "517 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/clean-stack/2.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "518 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.1.2",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "519 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "520 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/inflight/1.0.6",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "inflight",
+      "rawSpec": "^1.0.4"
+    }
+  },
+  "521 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inflight/1.0.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "522 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/once/1.4.0",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "once",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "523 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/once/1.4.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "524 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fs.realpath/1.0.0",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "fs.realpath",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "525 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs.realpath/1.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "526 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@socket.io/base64-arraybuffer/1.0.2",
+    "wanted": {
+      "dependentId": "/engine.io-parser/5.0.3",
+      "name": "@socket.io/base64-arraybuffer",
+      "rawSpec": "~1.0.2"
+    }
+  },
+  "527 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@socket.io/base64-arraybuffer/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "528 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "529 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/once/1.4.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "530 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fs.realpath/1.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "531 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/inflight/1.0.6",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "532 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@socket.io/base64-arraybuffer/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "533 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-is-absolute/1.0.1",
+    "wanted": {
+      "dependentId": "/glob/7.2.0",
+      "name": "path-is-absolute",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "534 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-is-absolute/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "535 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/once/1.4.0",
+    "wanted": {
+      "dependentId": "/inflight/1.0.6",
+      "name": "once",
+      "rawSpec": "^1.3.0"
+    }
+  },
+  "536 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-type/4.0.0",
+    "wanted": {
+      "dependentId": "/dir-glob/3.0.1",
+      "name": "path-type",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "537 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "538 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-is-absolute/1.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "539 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/path-type/4.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "540 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/micromatch/4.0.5",
+    "wanted": {
+      "dependentId": "/fast-glob/3.2.11",
+      "name": "micromatch",
+      "rawSpec": "^4.0.4"
+    }
+  },
+  "541 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "542 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/micromatch/4.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "543 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@nodelib/fs.stat/2.0.5",
+    "wanted": {
+      "dependentId": "/fast-glob/3.2.11",
+      "name": "@nodelib/fs.stat",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "544 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.stat/2.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "545 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.stat/2.0.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "546 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@nodelib/fs.walk/1.2.8",
+    "wanted": {
+      "dependentId": "/fast-glob/3.2.11",
+      "name": "@nodelib/fs.walk",
+      "rawSpec": "^1.2.3"
+    }
+  },
+  "547 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.walk/1.2.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "548 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/braces/3.0.2",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "braces",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "549 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/picomatch/2.3.1",
+    "wanted": {
+      "dependentId": "/micromatch/4.0.5",
+      "name": "picomatch",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "550 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@nodelib/fs.scandir/2.1.5",
+    "wanted": {
+      "dependentId": "/@nodelib/fs.walk/1.2.8",
+      "name": "@nodelib/fs.scandir",
+      "rawSpec": "2.1.5"
+    }
+  },
+  "551 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.scandir/2.1.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "552 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.walk/1.2.8",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "553 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/to-regex-range/5.0.1",
+    "wanted": {
+      "dependentId": "/fill-range/7.0.1",
+      "name": "to-regex-range",
+      "rawSpec": "^5.0.1"
+    }
+  },
+  "554 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/to-regex-range/5.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "555 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@nodelib/fs.scandir/2.1.5",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "556 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/to-regex-range/5.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "557 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/brace-expansion/1.1.11",
+    "wanted": {
+      "dependentId": "/minimatch/3.1.2",
+      "name": "brace-expansion",
+      "rawSpec": "^1.1.7"
+    }
+  },
+  "558 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "559 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/concat-map/0.0.1",
+    "wanted": {
+      "dependentId": "/brace-expansion/1.1.11",
+      "name": "concat-map",
+      "rawSpec": "0.0.1"
+    }
+  },
+  "560 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/concat-map/0.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "561 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brace-expansion/1.1.11",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "562 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/concat-map/0.0.1",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "563 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/wrappy/1.0.2",
+    "wanted": {
+      "dependentId": "/inflight/1.0.6",
+      "name": "wrappy",
+      "rawSpec": "1"
+    }
+  },
+  "564 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrappy/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "565 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/wrappy/1.0.2",
+    "wanted": {
+      "dependentId": "/once/1.4.0",
+      "name": "wrappy",
+      "rawSpec": "1"
+    }
+  },
+  "566 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/wrappy/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "567 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/is-number/7.0.0",
+    "wanted": {
+      "dependentId": "/to-regex-range/5.0.1",
+      "name": "is-number",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "568 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-number/7.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "569 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/fastq/1.13.0",
+    "wanted": {
+      "dependentId": "/@nodelib/fs.walk/1.2.8",
+      "name": "fastq",
+      "rawSpec": "^1.6.0"
+    }
+  },
+  "570 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fastq/1.13.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "571 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@nodelib/fs.stat/2.0.5",
+    "wanted": {
+      "dependentId": "/@nodelib/fs.scandir/2.1.5",
+      "name": "@nodelib/fs.stat",
+      "rawSpec": "2.0.5"
+    }
+  },
+  "572 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/balanced-match/1.0.2",
+    "wanted": {
+      "dependentId": "/brace-expansion/1.1.11",
+      "name": "balanced-match",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "573 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "574 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/is-number/7.0.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "575 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/fastq/1.13.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "576 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/balanced-match/1.0.2",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "577 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/reusify/1.0.4",
+    "wanted": {
+      "dependentId": "/fastq/1.13.0",
+      "name": "reusify",
+      "rawSpec": "^1.0.4"
+    }
+  },
+  "578 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/reusify/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "579 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/run-parallel/1.2.0",
+    "wanted": {
+      "dependentId": "/@nodelib/fs.scandir/2.1.5",
+      "name": "run-parallel",
+      "rawSpec": "^1.1.9"
+    }
+  },
+  "580 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/run-parallel/1.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "581 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/reusify/1.0.4",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "582 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/run-parallel/1.2.0",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "583 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/queue-microtask/1.2.3",
+    "wanted": {
+      "dependentId": "/run-parallel/1.2.0",
+      "name": "queue-microtask",
+      "rawSpec": "^1.2.2"
+    }
+  },
+  "584 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/queue-microtask/1.2.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "resolved"
+  },
+  "585 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/queue-microtask/1.2.3",
+    "requester": "/Volumes/WorkStation/dev/git/npx/sensen-senju",
+    "status": "found_in_store"
+  },
+  "586 error pnpm": {
+    "shortMessage": "Command failed with exit code 128: /usr/local/bin/git ls-remote --refs git+ssh://git@github.com/jonschlinkert/micromatch.git 2.2.0",
+    "command": "/usr/local/bin/git ls-remote --refs git+ssh://git@github.com/jonschlinkert/micromatch.git 2.2.0",
+    "escapedCommand": "\"/usr/local/bin/git\" ls-remote --refs \"git+ssh://git@github.com/jonschlinkert/micromatch.git\" 2.2.0",
+    "exitCode": 128,
+    "stdout": "",
+    "stderr": "git@github.com: Permission denied (publickey).\r\nfatal: Impossible de lire le dépôt distant.\n\nVeuillez vérifier que vous avez les droits d'accès\net que le dépôt existe.",
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/glob-fs/0.1.7",
+        "name": "glob-fs",
+        "version": "0.1.7"
+      }
+    ],
+    "err": {
+      "name": "pnpm",
+      "message": "Command failed with exit code 128: /usr/local/bin/git ls-remote --refs git+ssh://git@github.com/jonschlinkert/micromatch.git 2.2.0\ngit@github.com: Permission denied (publickey).\r\nfatal: Impossible de lire le dépôt distant.\n\nVeuillez vérifier que vous avez les droits d'accès\net que le dépôt existe.",
+      "stack": "pnpm: Command failed with exit code 128: /usr/local/bin/git ls-remote --refs git+ssh://git@github.com/jonschlinkert/micromatch.git 2.2.0\ngit@github.com: Permission denied (publickey).\r\nfatal: Impossible de lire le dépôt distant.\n\nVeuillez vérifier que vous avez les droits d'accès\net que le dépôt existe.\n    at makeError (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:42512:17)\n    at handlePromise (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:43083:33)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async getRepoRefs (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:85041:23)\n    at async resolveRef (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:85053:20)\n    at async resolveGit (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:85004:24)\n    at async Object.resolve (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:86129:241)\n    at async run (/Users/IanCarterWorks/.npm-global/lib/node_modules/pnpm/dist/pnpm.cjs:74205:23)"
+    }
+  }
+}

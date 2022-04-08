@@ -6,7 +6,7 @@ import { ScriptBuilder, ScriptWatcher } from "./com.script";
 import { Recoltes, WatchToCompile } from "./tools.factory";
 import { Serve } from "./com.webpack";
 import { execSync } from "child_process";
-export async function ServreFront() {
+export async function ServeFront() {
     /**
      * Load Configurations
      */
