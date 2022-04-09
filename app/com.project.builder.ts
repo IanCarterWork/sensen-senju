@@ -562,11 +562,15 @@ export async function ProjectBuilder(type : ProjectBuilderTypes){
                  * Dependencies : Installing
                  */
                 
-                SensenRawCli.$Console.Log('Frontend Dependencies', UiSpinner(), 'Wait until...');
+                SensenRawCli.$Console.Log('Frontend Dependencies', 'Wait until...');
 
+                UiSpinner()
+                
                 execSync(`cd ${ projectPath }/frontend && npm install`)
+                
+                SensenRawCli.$Console.Log('Backend Dependencies', 'Wait until...');
 
-                SensenRawCli.$Console.Log('Backend Dependencies', UiSpinner(), 'Wait until...');
+                UiSpinner()
 
 
 

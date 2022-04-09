@@ -37,9 +37,8 @@ export default function UiProgressBar(){
 
 
 
-export function UiSpinner(type ?: keyof typeof cliSpinners){
+export function UiSpinner(type ?: keyof typeof cliSpinners) : void{
 
-    return (type) ? cliSpinners[ type ] : cliSpinners.toggle10;
-
+    console.log( (type) ? cliSpinners[ type ] : cliSpinners.dots2 );
     
 }

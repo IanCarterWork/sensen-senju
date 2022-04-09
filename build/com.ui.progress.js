@@ -13,5 +13,5 @@ export default function UiProgressBar() {
     }, cliProgress.Presets.shades_grey);
 }
 export function UiSpinner(type) {
-    return (type) ? cliSpinners[type] : cliSpinners.toggle10;
+    console.log((type) ? cliSpinners[type] : cliSpinners.dots2);
 }
