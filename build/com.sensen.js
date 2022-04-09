@@ -22,18 +22,22 @@ const cli = new SensenRawCli.Create({
                 switch ((argv[0] || '').toLowerCase()) {
                     case '-full':
                         (async () => {
-                            await ProjectBuilder('back');
-                            await ProjectBuilder('front');
+                            await ProjectBuilder('Frontend + Backend');
                         })();
                         break;
                     case '-front':
                         (async () => {
-                            await ProjectBuilder('front');
+                            await ProjectBuilder('Frontend');
                         })();
                         break;
                     case '-back':
                         (async () => {
-                            await ProjectBuilder('back');
+                            await ProjectBuilder('Backend');
+                        })();
+                        break;
+                    default:
+                        (async () => {
+                            await ProjectBuilder();
                         })();
                         break;
                 }

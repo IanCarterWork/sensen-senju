@@ -48,9 +48,7 @@ const cli = new SensenRawCli.Create({
 
                         (async ()=>{
 
-                            await ProjectBuilder('back')
-
-                            await ProjectBuilder('front')
+                            await ProjectBuilder('Frontend + Backend')
 
                         })();
 
@@ -63,7 +61,7 @@ const cli = new SensenRawCli.Create({
 
                         (async ()=>{
 
-                            await ProjectBuilder('front')
+                            await ProjectBuilder('Frontend')
 
                         })();
 
@@ -75,11 +73,24 @@ const cli = new SensenRawCli.Create({
 
                         (async ()=>{
 
-                            await ProjectBuilder('back')
+                            await ProjectBuilder('Backend')
 
                         })();
 
                     break;
+
+
+
+                    default:
+
+                        (async ()=>{
+
+                            await ProjectBuilder()
+
+                        })();
+
+                    break;
+
         
 
                 }

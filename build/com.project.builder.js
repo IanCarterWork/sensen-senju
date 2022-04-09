@@ -9,17 +9,18 @@ import Repository from "./com.repositories";
 import Distribute from "./com.distribute";
 import UiProgressBar from "./com.ui.progress";
 import { UnArchivages } from "./tool.archivages";
-export async function ProjectBuilderQuestions() {
+export async function ProjectBuilderQuestions(type) {
     return new Promise((done, fail) => {
-        var inquirer = require('inquirer');
-        inquirer
-            .prompt([
+        const inquirer = require('inquirer');
+        const questions = [
             {
                 name: 'name',
                 message: 'What is the name of the project?',
                 type: 'input',
-            },
-            {
+            }
+        ];
+        if (!type) {
+            questions[questions.length] = {
                 name: 'template',
                 message: 'What template do you want?',
                 type: 'list',
@@ -28,8 +29,10 @@ export async function ProjectBuilderQuestions() {
                     'Frontend',
                     'Backend',
                 ]
-            },
-        ])
+            };
+        }
+        inquirer
+            .prompt(questions)
             .then(async (answers) => {
             done(answers);
         })
@@ -127,10 +130,12 @@ export async function ProjectBuilderConfigurations(source) {
 }
 export async function ProjectBuilder(type) {
     return new Promise(async (done, fail) => {
-        await ProjectBuilderQuestions()
+        await ProjectBuilderQuestions(type)
             .then(async (answers) => {
+            answers.template = type || answers.template;
             const projectPath = `${cwd()}/${answers.name}`;
             const repo = Repository.git[answers.template] || undefined;
+            SensenRawCli.$Console.Log('Template', answers.template);
             /**
              * Template : Download
              */
@@ -227,7 +232,7 @@ export async function ProjectBuilder(type) {
              */
             if (existsSync(`${projectPath}/frontend`)) {
                 SensenRawCli.$Console.Log('Frontend Dependencies', 'Wait until...');
-                execSync(`cd ${projectPath}/frontend && npm install`, {
+                execSync(`cd ${projectPath}/frontend && yarn install`, {
                     stdio: 'inherit'
                 });
             }

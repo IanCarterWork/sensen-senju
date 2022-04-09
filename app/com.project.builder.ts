@@ -17,41 +17,45 @@ import { UnArchivages } from "./tool.archivages";
 
 
 
-export async function ProjectBuilderQuestions(){
+export async function ProjectBuilderQuestions(type? : ProjectBuilderTemplate){
 
 
     return new Promise<ProjectBuilderAnswers>((done : Function, fail : Function) =>{
 
     
-        var inquirer = require('inquirer');
+        const inquirer = require('inquirer');
+
+        const questions : any[] =  [
+
+            {
+                name: 'name',   
+                message: 'What is the name of the project?',
+                type: 'input',
+            }
+
+        ];
     
+
+        if(!type){
+
+            questions[questions.length] = {
+                
+                name: 'template',
+                message: 'What template do you want?',
+                type: 'list',
+                choices: [
+                    'Frontend + Backend',
+                    'Frontend',
+                    'Backend',
+                ]
+            }
+
+        }
+        
+        
         inquirer
         
-            .prompt([
-    
-
-                {
-                    name: 'name',   
-                    message: 'What is the name of the project?',
-                    type: 'input',
-                },
-            
-
-
-                {  
-                    name: 'template',
-                    message: 'What template do you want?',
-                    type: 'list',
-                    choices: [
-                        'Frontend + Backend',
-                        'Frontend',
-                        'Backend',
-                    ]
-                },
-            
-
-
-            ])
+            .prompt(questions)
     
             .then(async (answers : ProjectBuilderAnswers) => {
 
@@ -336,21 +340,28 @@ export async function ProjectBuilderConfigurations(source : string){
 
 
 
-export async function ProjectBuilder(type : ProjectBuilderTypes){
+export async function ProjectBuilder(type? : ProjectBuilderTemplate){
 
 
     return new Promise(async (done : Function, fail : Function) => {
 
 
-        await ProjectBuilderQuestions()
+        await ProjectBuilderQuestions(type)
     
             .then(async answers=>{
+
+                answers.template = type || answers.template
+                
 
                 const projectPath = `${ cwd() }/${ answers.name }`
                 
                 const repo = Repository.git[ answers.template ] || undefined; 
         
 
+
+                SensenRawCli.$Console.Log('Template', answers.template)
+                
+                
 
                 /**
                  * Template : Download 
@@ -567,7 +578,8 @@ export async function ProjectBuilder(type : ProjectBuilderTypes){
                 if(existsSync(`${ projectPath }/frontend`)){
     
                     SensenRawCli.$Console.Log('Frontend Dependencies', 'Wait until...');
-                    execSync(`cd ${ projectPath }/frontend && npm install`, {
+
+                    execSync(`cd ${ projectPath }/frontend && yarn install`, {
                         stdio: 'inherit'
                     })
                     
