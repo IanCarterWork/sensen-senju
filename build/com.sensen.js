@@ -1,5 +1,6 @@
 import SensenRawCli from "sensen.raw.cli";
 import GetPackage from "./com.package.get";
+import { ProjectBuilder } from "./com.project.builder";
 import { ServeBack } from "./com.serve.back";
 import { ServeFront } from "./com.serve.front";
 const cli = new SensenRawCli.Create({
@@ -8,24 +9,63 @@ const cli = new SensenRawCli.Create({
     Execute: () => { },
     Children: [
         /**
+         * Create new project
+         */
+        new SensenRawCli.Child({
+            iD: 'create',
+            Title: 'Create new project',
+            Execute: (argv) => {
+                // SensenRawCli.$Console.Notice('', '')
+                /**
+                 * Switch Case
+                 */
+                switch ((argv[0] || '').toLowerCase()) {
+                    case '-full':
+                        (async () => {
+                            await ProjectBuilder('back');
+                            await ProjectBuilder('front');
+                        })();
+                        break;
+                    case '-front':
+                        (async () => {
+                            await ProjectBuilder('front');
+                        })();
+                        break;
+                    case '-back':
+                        (async () => {
+                            await ProjectBuilder('back');
+                        })();
+                        break;
+                }
+            },
+        }),
+        /**
          * Get resource
          */
         new SensenRawCli.Child({
             iD: 'get',
             Title: 'Get resources',
-            Execute: (args) => {
-                SensenRawCli.$Console.Notice('npm install', args);
-            },
+            Execute: (args) => { },
             Children: [
                 /**
-                 * Get Package from Git
+                 * Get backend package
                  */
                 new SensenRawCli.Child({
-                    iD: 'package',
-                    Title: 'Get Backend Package',
-                    Execute: (args) => {
-                        GetPackage.Git(args[0], args[1] || undefined);
-                    },
+                    iD: 'back:package',
+                    Title: 'Get package',
+                    Execute: (args) => { },
+                    Children: [
+                        /**
+                         * Get Package from Git
+                         */
+                        new SensenRawCli.Child({
+                            iD: '-git',
+                            Title: 'Get Git Package',
+                            Execute: (args) => {
+                                GetPackage.Git(args[0], args[1] || undefined);
+                            },
+                        }),
+                    ]
                 }),
             ]
         }),
@@ -35,11 +75,11 @@ const cli = new SensenRawCli.Create({
         new SensenRawCli.Child({
             iD: 'serve',
             Title: 'Sensen Serve Frontend/Backend [, -front] or [, -back] or [, all',
-            Execute: (args) => {
+            Execute: (argv) => {
                 /**
                  * Switch Case
                  */
-                switch ((args[0] || '').toLowerCase()) {
+                switch ((argv[0] || '').toLowerCase()) {
                     /**
                      * Serve Frontend
                      */
@@ -77,7 +117,7 @@ const cli = new SensenRawCli.Create({
                                 message: 'Did you say start a development server ?',
                                 type: 'list',
                                 choices: [
-                                    'All',
+                                    'Frontend + Backend',
                                     'Frontend',
                                     'Backend',
                                 ]
@@ -85,7 +125,7 @@ const cli = new SensenRawCli.Create({
                         ])
                             .then(async (answers) => {
                             SensenRawCli.$Console.Warning('Starting', '...');
-                            if (answers.serve == 'All') {
+                            if (answers.serve == 'Frontend + Backend') {
                                 await ServeBack();
                                 await ServeFront();
                             }

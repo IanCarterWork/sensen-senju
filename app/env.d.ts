@@ -1,5 +1,24 @@
 
 
+declare type BuilderProcessorOn =  {
+
+    start?: (length : any[]) => void,
+    
+    progress?: (from : string, to : string, percent : number) => void,
+    
+    done?: (done : any[]) => void,
+
+}
+
+
+
+declare type ProjectGitRepositories = {
+
+    git: Record<ProjectBuilderTemplate, string>
+    
+}
+
+
 
 declare type AvailablePlatforms = 'web' | 'android' | 'ios';
 
@@ -14,6 +33,30 @@ declare type BuildOptions = {
     
 }
 
+
+
+declare type ProjectBuilderTypes = 'front' | 'back';
+
+
+declare type ProjectBuilderTemplate = 'Frontend + Backend' | 'Frontend' | 'Backend';
+
+declare type ProjectBuilderDone = {
+
+    name: string;
+
+    template: ProjectBuilderTemplate;
+
+    source: string;
+    
+}
+
+declare type ProjectBuilderAnswers = {
+
+    name: string;
+
+    template: ProjectBuilderTemplate;
+    
+}
 
 
 declare type PackageConfig = {

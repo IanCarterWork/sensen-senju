@@ -20,13 +20,17 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "@types/cli-progress": "^3.9.2",
+    "ansi-colors-es6": "^5.0.0",
     "chokidar": "^3.5.3",
+    "cli-progress": "^3.10.0",
     "del": "^6.0.0",
     "esm": "^3.2.25",
     "express": "^4.17.3",
     "fs-extra": "^10.0.0",
     "glob-fs": "^0.1.7",
     "inquirer": "^8.2.2",
+    "onezip": "^5.0.0",
     "sensen.raw.cli": "^0.0.28",
     "socket.io": "^4.4.1"
   }

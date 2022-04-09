@@ -1,6 +1,8 @@
 import { exec } from "child_process";
+import { argv } from "process";
 import SensenRawCli from "sensen.raw.cli";
 import GetPackage from "./com.package.get";
+import { ProjectBuilder } from "./com.project.builder";
 import { ServeBack } from "./com.serve.back";
 import { ServeFront } from "./com.serve.front";
 
@@ -20,47 +22,129 @@ const cli = new SensenRawCli.Create({
 
 
 
+
+
+        /**
+         * Create new project
+         */
+
+        new SensenRawCli.Child({
+
+            iD:'create',
+
+            Title: 'Create new project',
+
+            Execute: (argv: string[]) => {
+
+                // SensenRawCli.$Console.Notice('', '')
+
+                /**
+                 * Switch Case
+                 */
+                switch((argv[0]||'').toLowerCase()){
+
+
+                    case '-full':
+
+                        (async ()=>{
+
+                            await ProjectBuilder('back')
+
+                            await ProjectBuilder('front')
+
+                        })();
+
+
+                    break;
+        
+
+
+                    case '-front':
+
+                        (async ()=>{
+
+                            await ProjectBuilder('front')
+
+                        })();
+
+                    break;
+        
+
+
+                    case '-back':
+
+                        (async ()=>{
+
+                            await ProjectBuilder('back')
+
+                        })();
+
+                    break;
+        
+
+                }
+
+            },
+
+        }),
+        
+        
+        
+        
+
         /**
          * Get resource
          */
+        
         new SensenRawCli.Child({
     
             iD: 'get',
     
             Title:'Get resources',
     
-            Execute: (args: string[])=>{
-
-                SensenRawCli.$Console.Notice('npm install', args)
-
-            },
+            Execute: (args: string[])=>{ },
 
             Children: [
 
 
-
-
                 /**
-                 * Get Package from Git
+                 * Get backend package
                  */
                 new SensenRawCli.Child({
-    
-                    iD: 'package',
             
-                    Title:'Get Backend Package',
+                    iD: 'back:package',
             
-                    Execute: (args: string[])=>{
+                    Title:'Get package',
+            
+                    Execute: (args: string[])=>{ },
         
-                        GetPackage.Git(
-                            
-                            args[0],
-        
-                            args[1] || undefined
-                            
-                        );
-        
-                    },
-        
+                    Children: [
+                
+                        /**
+                         * Get Package from Git
+                         */
+                         new SensenRawCli.Child({
+            
+                            iD: '-git',
+                    
+                            Title:'Get Git Package',
+                    
+                            Execute: (args: string[])=>{
+                
+                                GetPackage.Git(
+                                    
+                                    args[0],
+                
+                                    args[1] || undefined
+                                    
+                                );
+                
+                            },
+                
+                
+                        }),
+                        
+                    ]
         
                 }),
         
@@ -83,14 +167,14 @@ const cli = new SensenRawCli.Create({
     
             Title:'Sensen Serve Frontend/Backend [, -front] or [, -back] or [, all',
     
-            Execute: (args: string[])=>{
+            Execute: (argv: string[])=>{
 
 
 
                 /**
                  * Switch Case
                  */
-                switch((args[0]||'').toLowerCase()){
+                switch((argv[0]||'').toLowerCase()){
 
 
 
@@ -170,7 +254,7 @@ const cli = new SensenRawCli.Create({
                                     
                                     choices: [
                                     
-                                        'All',
+                                        'Frontend + Backend',
                                     
                                         'Frontend',
                                     
@@ -184,13 +268,13 @@ const cli = new SensenRawCli.Create({
 
                             .then(async (answers : {
 
-                                serve: 'All' | 'Frontend' | 'Backend'
+                                serve: 'Frontend + Backend' | 'Frontend' | 'Backend'
                                 
                             }) => {
     
                                 SensenRawCli.$Console.Warning('Starting', '...')
 
-                                if(answers.serve == 'All'){
+                                if(answers.serve == 'Frontend + Backend'){
 
                                     await ServeBack();
                                     
