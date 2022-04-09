@@ -9,7 +9,7 @@ import SensenRawCli from "sensen.raw.cli";
 import { ManagerDownload } from "./com.manager.download";
 import Repository from "./com.repositories"
 import Distribute from "./com.distribute"
-import UiProgressBar, { UiSpinner } from "./com.ui.progress";
+import UiProgressBar from "./com.ui.progress";
 import { UnArchivages } from "./tool.archivages";
 
 
@@ -561,17 +561,28 @@ export async function ProjectBuilder(type : ProjectBuilderTypes){
                 /**
                  * Dependencies : Installing
                  */
-                
-                SensenRawCli.$Console.Log('Frontend Dependencies', 'Wait until...');
 
-                UiSpinner()
-                
-                execSync(`cd ${ projectPath }/frontend && npm install`)
-                
-                SensenRawCli.$Console.Log('Backend Dependencies', 'Wait until...');
 
-                UiSpinner()
+                
+                if(existsSync(`${ projectPath }/frontend`)){
+    
+                    SensenRawCli.$Console.Log('Frontend Dependencies', 'Wait until...');
+                    execSync(`cd ${ projectPath }/frontend && npm install`, {
+                        stdio: 'inherit'
+                    })
+                    
+                }
+                
+                
+                if(existsSync(`${ projectPath }/backend`)){
+    
+                    SensenRawCli.$Console.Log('Backend Dependencies', 'Wait until...');
 
+                }
+                
+                    
+
+                
 
 
 
@@ -580,56 +591,7 @@ export async function ProjectBuilder(type : ProjectBuilderTypes){
                  * Template : Done
                  */
                 
-                
-                
-
-                    // .then(async res=>{
-                        
-                    //     // progress.increment();
-
-
-                    //     ProjectBuilderClean(res.source)
-
-                    //         .then((clean)=>{
-
-                    //             // progress.increment();
-
-
-                    //             ProjectBuilderConfigurations(res.source)
-
-                    //                 .then(isConfig=>{
-
-                    //                     // progress.update(PROGRESS_LEVEL);
-
-                    //                     // progress.stop()
-                                        
-                    //                 })
-
-                    //                 .catch(e=>{
-
-                    //                     SensenRawCli.$Console.Error('Project Config', e)
-
-                    //                 })
-
-                    //             // SensenRawCli.$Console.Notice(`Configuration`, res.name);
-                                
-                    //         })
-
-                    //         .catch((e)=>{
-
-                    //             SensenRawCli.$Console.Error('Project Downloader', e)
-
-                    //         })
-
-                    // })
-
-                    // .catch(er=>{
-                        
-                    //     SensenRawCli.$Console.Error('Project Downloader', er)
-
-                    //     fail(er)
-
-                    // })
+                SensenRawCli.$Console.Success(`Let's go`, ``);
 
                 
             })

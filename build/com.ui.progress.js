@@ -1,5 +1,5 @@
 import cliProgress from 'cli-progress';
-import cliSpinners from 'cli-spinners';
+// import cliSpinners from 'cli-spinners';
 export default function UiProgressBar() {
     return new cliProgress.SingleBar({
         format: '{value}/{total} ' + ('{bar}') + ' {percentage}%',
@@ -12,6 +12,6 @@ export default function UiProgressBar() {
         // stream: process.stdout,
     }, cliProgress.Presets.shades_grey);
 }
-export function UiSpinner(type) {
-    console.log((type) ? cliSpinners[type] : cliSpinners.dots2);
-}
+// export function UiSpinner(type ?: keyof typeof cliSpinners) : void{
+//     console.log( ((type) ? cliSpinners[ type ] : cliSpinners.dots2) );
+// }
