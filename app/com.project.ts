@@ -93,6 +93,8 @@ export const Project = {
         x.on('spawn', ()=>{ SensenRawCli.$Console.Message(`Frontend • ${label || ''}`, 'Spawn') })
     
         if(x.stdout){
+
+            x.stdout.pipe(process.stdout)
     
             x.stdout.addListener('data', (chunk)=>{
     
@@ -139,6 +141,8 @@ export const Project = {
     
         
         if(x.stdout){
+    
+            x.stdout.pipe(process.stdout)
     
             x.stdout.addListener('data', (chunk)=>{
     

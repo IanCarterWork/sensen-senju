@@ -39,6 +39,7 @@ export const Project = {
         const x = exec(`cd ${front} && ${cmd}`);
         x.on('spawn', () => { SensenRawCli.$Console.Message(`Frontend • ${label || ''}`, 'Spawn'); });
         if (x.stdout) {
+            x.stdout.pipe(process.stdout);
             x.stdout.addListener('data', (chunk) => {
                 SensenRawCli.$Console.Notice(`Frontend • ${label || ''}`, chunk);
             });
@@ -60,6 +61,7 @@ export const Project = {
         const x = exec(`cd ${back} && ${cmd}`);
         // x.on('spawn', ()=>{ SensenRawCli.$Console.Message(`Backend • ${label || ''}`, 'Spawn') })
         if (x.stdout) {
+            x.stdout.pipe(process.stdout);
             x.stdout.addListener('data', (chunk) => {
                 SensenRawCli.$Console.Notice(`Backend • ${label || ''}`, chunk);
             });
