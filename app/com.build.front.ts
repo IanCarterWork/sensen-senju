@@ -30,7 +30,7 @@ export async function BuildFront(){
      }
 
 
-    let terminalTools : TTerminalTools;
+    // let terminalTools : TTerminalTools;
      
 
 
@@ -52,14 +52,14 @@ export async function BuildFront(){
      * LST : Launch Sensen Terminal (only development mode)
      */
      
-    if($LocalConfig.mode == 'development'){
+    // if($LocalConfig.mode == 'development'){
 
         // terminalTools = TerminalRun(configCombos);
         // console.log('')
         // SensenRawCli.$Console.Notice('Configuration', ($LocalConfig.paths ? true : false) )
         // console.log('')
 
-    }
+    // }
      
      
      

@@ -31,7 +31,9 @@ declare type BuildOptions = {
 
     port: number;
 
-    protocol: 'http' | 'https'
+    protocol: 'http' | 'https';
+
+    path?: string;
     
 }
 

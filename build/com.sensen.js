@@ -1,4 +1,5 @@
 import SensenRawCli from "sensen.raw.cli";
+import { BuildFront } from "./com.build.front";
 import GetPackage from "./com.package.get";
 import { ProjectBuilder } from "./com.project.builder";
 import { ServeBack } from "./com.serve.back";
@@ -148,6 +149,89 @@ const cli = new SensenRawCli.Create({
                                 SensenRawCli.$Console.Warning('Warning', error);
                             }
                         });
+                        break;
+                }
+            },
+            // Children: [
+            // ]
+        }),
+        /**
+         * Build Manager
+         */
+        new SensenRawCli.Child({
+            iD: 'build',
+            Title: 'Sensen Build Frontend/Backend [, -front] or [, -back] or [, all',
+            Execute: (argv) => {
+                /**
+                 * Switch Case
+                 */
+                switch ((argv[0] || '').toLowerCase()) {
+                    /**
+                     * Serve Frontend
+                     */
+                    case '-front':
+                        (async () => {
+                            await BuildFront();
+                        })();
+                        break;
+                    /**
+                     * Serve backend
+                     */
+                    case '-back':
+                        (async () => {
+                            // await ServeBack();
+                            SensenRawCli.$Console.Warning('Not available');
+                        })();
+                        break;
+                    /**
+                     * Serve backend
+                     */
+                    case '-all':
+                        (async () => {
+                            // await ServeBack();
+                            await ServeFront();
+                        })();
+                        break;
+                    /**
+                     * All Server
+                     */
+                    default:
+                        // var inquirer = require('inquirer');
+                        // inquirer
+                        //     .prompt([
+                        //         {
+                        //             name: 'serve',
+                        //             message: 'Did you say start a development server ?',
+                        //             type: 'list',
+                        //             choices: [
+                        //                 'Frontend + Backend',
+                        //                 'Frontend',
+                        //                 'Backend',
+                        //             ]
+                        //         },
+                        //     ])
+                        //     .then(async (answers : {
+                        //         serve: 'Frontend + Backend' | 'Frontend' | 'Backend'
+                        //     }) => {
+                        //         SensenRawCli.$Console.Warning('Starting', '...')
+                        //         if(answers.serve == 'Frontend + Backend'){
+                        //             await ServeBack();
+                        //             await ServeFront();
+                        //         }
+                        //         else if(answers.serve == 'Backend'){
+                        //             await ServeBack();
+                        //         }
+                        //         else if(answers.serve == 'Frontend'){
+                        //             await ServeFront();
+                        //         }
+                        //     })
+                        //     .catch((error : any) => {
+                        //         if (error.isTtyError) {
+                        //             SensenRawCli.$Console.Error('Error', error.isTtyError)
+                        //         } else {
+                        //             SensenRawCli.$Console.Warning('Warning', error )
+                        //         }
+                        //     });
                         break;
                 }
             },
