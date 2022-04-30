@@ -1,6 +1,6 @@
 {
   "name": "sensen-senju",
-  "version": "0.0.47",
+  "version": "0.0.48",
   "description": "",
   "main": "build/index.js",
   "bin": {
