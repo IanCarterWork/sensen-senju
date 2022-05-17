@@ -1,6 +1,6 @@
 {
   "name": "sensen-senju",
-  "version": "0.0.50",
+  "version": "0.0.51",
   "description": "",
   "main": "build/index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "watch": "tsc -watch",
     "run:terminal": "node bin/com.terminal.server.run.js"
   },
-  "author": "IanCarterWork",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/cli-progress": "^3.9.2",
